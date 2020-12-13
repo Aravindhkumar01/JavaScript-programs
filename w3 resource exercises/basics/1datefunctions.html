@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2></h2>
+    <p id= "getext"></p>
+    <script>
+
+
+      //let d = new Date();//shows current time ,date.
+
+      //let d = new Date(1993,00,14,08,05,15,20);
+
+      //let d = new Date(1993,01,14,08);
+
+       // let d = new Date(93,01,14);
+
+        //let d = new Date("febraury 14 2020");
+
+        //let d = new Date("2020-02-14");
+
+        //let msecs = Date.parse("febraury 14, 1993");
+
+        //let d = new Date(msecs);
+                  
+                //GET METHODS:
+
+        //let d = new Date();
+
+        //document.getElementById("getext").innerHTML = d.getFullYear();
+
+       //let d = new Date();
+
+        //document.getElementById("getext").innerHTML = d.getTime();
+
+       // let d = new Date();
+
+        //document.getElementById("getext").innerHTML = d.getDate();
+
+       // let d = new Date();
+
+        //document.getElementById("getext").innerHTML = d.getMonth();
+
+       // let d = new Date();
+
+       // document.getElementById("getext").innerHTML = d.getDay();
+
+       // let d = new Date();
+
+       // document.getElementById("getext").innerHTML = d.getHours();
+
+       // let d = new Date();
+
+       // document.getElementById("getext").innerHTML = d.getMinutes();
+
+      // let d = new Date();
+
+       // document.getElementById("getext").innerHTML = Date.now();
+
+      //let d = new Date();
+
+       // document.getElementById("getext").innerHTML = d.getUTCDate();
+
+                    //SET METHODS:
+          
+        // let d = new Date();
+
+        // d.setFullYear(2021,01,14);
+
+        // document.getElementById("getext").innerHTML = d;
+
+
+        // let d = new Date();
+
+        // d.setDate(d.getDate() + 10);
+
+         //document.getElementById("getext").innerHTML = d;
+
+         /*let today = new Date();
+
+         let days = ['sunday','Monday','tuesday','wednesday','thursday','friday','saturday'];
+
+         console.log("today is :" + days[today.getDay()]);
+
+         if (today.getHours() >=12)
+
+         {
+           console.log("current time is:" + (today.getHours() -12) +"pm:" + today.getMinutes() + ":" + today.getSeconds());
+         }
+
+         else
+
+         {
+           console.log("current time is:" + today.getHours()  +"am" + today.getMinutes() + ":" + today.getSeconds());
+         }*/
+
+var date = new Date();
+
+var newDate = new Array ("Sunday","Monday","Tuesday","Wednesday","Thrusday","Firday","Saturday");
+
+console.log("Today Is : " + newDate[date.getDay()]);
+//For getting time
+var storeTime;
+
+var newTime =[0,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11];
+//For Am And pm
+date.getHours() > 12 ? storeTime = "PM" : storeTime = "AM";
+
+console.log("Time Right Now - " + newTime[date.getHours()] + " : " + date.getMinutes() + " : "+ date.getSeconds() +" "+ storeTime);
+
+
+
+    
+</script>
+
+  </body>
+</html>

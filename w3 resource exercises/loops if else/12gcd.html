@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2></h2>
+    <p></p>
+    <script>
+
+
+
+      let a = 48;
+      let b = 64;
+      let gcd = [];
+
+
+      if (a>b)
+      {
+        for(res=1; res<=a; res++)
+        {
+          if (a%res ==0 && b%res ==0)
+          {
+            gcd =[res];
+          }
+        }
+      }
+
+
+      else
+      {
+        for(res=1; res<=b; res++)
+        {
+          if(a%res ==0 && b%res ==0)
+          {
+            gcd =[res];
+          }
+        }
+      }
+
+      document.write(gcd);
+
+     
+
+   </script>
+
+  </body>
+</html>

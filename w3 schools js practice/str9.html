@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2> string methods</h2>
+    <p id ="get">split using "" seperators through loop</p>
+    <script>
+      let text ="aravindh";
+      let spli = text.split("");
+      let text1 ="";
+      let i;
+      for (i=0; i<spli.length; i++ ){
+        text1 = text1 + spli[i] + "<br>";
+      }
+      document.getElementById("get").innerHTML = text1;
+
+
+    </script>
+  </body>
+</html>

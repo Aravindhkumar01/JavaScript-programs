@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2></h2>
+    <p></p>
+    <script>
+
+
+    var string = "hell",
+    i, j,
+    temp;
+
+    for (i = 0; i < string.length; i++) 
+
+    {
+    temp = '';
+
+    for (j = 1; j <= string.length; j++) 
+    
+    temp += string[(i + j) % string.length];
+
+    console.log(temp);
+
+    }
+  
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>to find armstrong number</h2>
+    <script>  
+
+
+    let number = 153;
+    let verify = number;
+    let result = 0;
+    let sum = 0;
+    let length = number.toString().length;
+    let power;
+
+    while (number!=0)
+    {
+      result = number % 10;
+      power = Math.pow(result,length);
+      sum = sum + power;
+      number = parseInt(number/10);
+
+    }
+
+    if (verify == sum)
+    {
+      document.write("this is armstrong number");
+    }
+
+    else 
+    {
+      document.write("this is not armstrong number");
+    }
+
+
+
+    </script>
+  </body>
+</html>

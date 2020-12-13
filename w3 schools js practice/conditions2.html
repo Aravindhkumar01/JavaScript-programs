@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id ="gettext">else if conditions sample</p>
+    <button onclick = "myfunc()">click me</button>
+
+    <script>
+
+
+    function myfunc()
+    {
+      let hour = new Date().getHours();
+      let greeting;
+
+      if (hour >15){
+        greeting = "good morning";
+      }
+
+      else if (hour <13)
+      {
+        greeting = "good day";
+      }
+
+      else
+      {
+        greeting = "good evening";
+      }
+      
+      document.getElementById("gettext").innerHTML = greeting;
+
+    }
+    </script>
+  </body>
+</html>

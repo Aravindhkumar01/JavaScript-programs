@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>if else statement</h2>
+    <p>using property to get current time</p>
+    <button onclick ="myfunc()">click me</button>
+    <p id ="demo"></p>
+    <script>
+      
+
+      
+function myfunc()
+{
+  let Hour = new Date().getHours();
+  let greeting;
+
+  if (Hour > 12)
+  {
+    greeting = "great day";
+  }
+
+  else
+  {
+    greeting = "noon";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+
+
+    </script>
+  </body>
+</html>

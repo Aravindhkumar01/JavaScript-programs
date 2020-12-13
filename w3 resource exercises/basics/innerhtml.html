@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id ="in">innerhtml is element object. it returns and set html content of element </p>
+    <ul id ="get">
+
+      <li>coffee</li>
+      <li>tea</li>
+      <li>milk</li>
+
+    </ul>
+    <button onclick = 'content()''>click to see the unordered list once again </button>
+
+    <script>
+
+
+
+     function content()
+     {
+        let text = document.getElementById("get").innerHTML
+        document.getElementById("in").innerHTML = text
+     }
+
+
+
+    </script>
+
+     </body>
+</html>

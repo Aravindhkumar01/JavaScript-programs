@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>happy numbers</title>
+      <body>
+        <h2>practice</h2>
+        <script>
+
+
+
+          var a = prompt(" Enter lower limit for happy numbers:") - 0; 
+          b = prompt(" Enter upper limit for happy numbers:") - 0;
+          document.write("<b>Happy Numbers</b> in " + a + " to " + b + " are:<hr>");
+
+
+
+         for (var c = a; c <= b; c++)
+         if (sumSquareDigits(c) === 1)
+         document.write(c + "<br>");
+
+
+
+         function sumSquareDigits(n) {
+    var x = n.toString(), y = 0;
+    for (var z = 0; z < x.length; z++)
+        y += Math.pow(x.charAt(z) - 0, 2);
+    while (y >= 10)
+        y = sumSquareDigits(y);
+    return y;
+}
+
+
+          </script>
+      </body>
+    </head>
+  </html>
+
+
+
+  
+
+
+
+
+
+

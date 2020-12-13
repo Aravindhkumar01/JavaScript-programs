@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>display current date</h2>
+    <script>
+
+
+      /*let today = new Date();
+
+      let year = today.getFullYear();
+      let month = today.getMonth()+1;
+      let date = today.getDate();
+
+      if (date < 10)
+
+      {
+          date = '0' + date;
+      }
+
+      if (month < 10)
+
+      {
+         month = '0' + month;
+      }
+
+      today = year +'-'+ month +'-'+ date;
+      console.log(today);
+      today = year +'/' +month +'/'+ date;
+      console.log(today);
+      today = date +'-'+ month +'-'+ year;
+      console.log(today);*/
+
+
+      let today = new Date();
+      let dd = today.getDate();
+
+      let mm = today.getMonth()+1; 
+      const yyyy = today.getFullYear();
+
+      if(dd<10) 
+      {
+      dd=`0${dd}`;
+      } 
+
+      if(mm<10) 
+       {
+       mm=`0${mm}`;
+       } 
+       
+       today = `${mm}-${dd}-${yyyy}`;
+        console.log(today);
+
+       today = `${mm}/${dd}/${yyyy}`;
+        console.log(today);
+
+       today = `${dd}-${mm}-${yyyy}`;
+          console.log(today);
+          
+      today = `${dd}/${mm}/${yyyy}`;
+         console.log(today);
+
+    </script>
+  </body>
+</html>

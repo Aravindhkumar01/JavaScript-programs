@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2></h2>
+    <p></p>
+    <script>
+      
+
+var str = "joy";
+var a;
+var b;
+
+for (a=0; a<str.length; a++)
+
+{
+  temp ="";
+
+  console.log(+a +1 +' rotation')
+
+  for (b=0; b<=str.length; b++)
+  {
+    temp = temp + str[(a+b) % str.length];
+
+    console.log(a+b, str.length, (a+b) % str.length)
+
+    console.log(temp);
+  }
+}
+
+      
+
+
+</script>
+
+  </body>
+</html>
